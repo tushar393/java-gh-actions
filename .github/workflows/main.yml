@@ -17,6 +17,8 @@ jobs:
       - name: "Build & test"
         run: |
           echo "done!"
+          cd d-two
+          pwd
 
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
