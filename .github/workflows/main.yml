@@ -23,10 +23,11 @@ jobs:
 #            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: "Build & test"
+      - uses: actions/checkout@v2
         run: |
           echo "done!"
-#          cd ../d-two
-#          pwd
+          cd d-two
+          pwd
 
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
@@ -35,7 +36,5 @@ jobs:
           prerelease: true
           title: "Development Build"
           files: |
-            cd d-two
-            pwd
             LICENSE.txt
             *.jar
