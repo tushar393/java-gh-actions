@@ -23,7 +23,7 @@ jobs:
 #            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: "checkout"
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
 
       - name: "Build & test"
         run: |
