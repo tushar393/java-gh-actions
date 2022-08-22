@@ -28,7 +28,7 @@ jobs:
           pwd
           echo "original!"
           echo "needed one"
-          cd /d-two
+          cd .\d-two\
           pwd
 
       - uses: "marvinpinto/action-automatic-releases@latest"
