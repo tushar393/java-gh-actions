@@ -26,9 +26,8 @@ jobs:
         run: |
           echo "done!"
           pwd
-          echo "original!"
           echo "needed one"
-          cd .\d-two\
+          cd .\java-gh-actions\d-two\
           pwd
 
       - uses: "marvinpinto/action-automatic-releases@latest"
