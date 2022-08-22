@@ -24,11 +24,9 @@ jobs:
 
       - name: "Build & test"
         run: |
+          cd d-two
+          pwd
           echo "done!"
-          pwd
-          echo "needed one"
-          cd .\java-gh-actions\d-two\
-          pwd
 
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
