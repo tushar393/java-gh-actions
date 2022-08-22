@@ -14,13 +14,13 @@ jobs:
 
     steps:
       # ...
-      - name: Deploy
-        uses: "marvinpinto/action-automatic-releases@latest"
-        env:
-            REPO: self
-            BRANCH: master
-            FOLDER: java-gh-actions/d-two
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#      - name: Deploy
+#        uses: "marvinpinto/action-automatic-releases@latest"
+#        env:
+#            REPO: self
+#            BRANCH: master
+#            FOLDER: java-gh-actions/d-two
+#            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: "Build & test"
         run: |
