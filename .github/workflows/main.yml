@@ -24,12 +24,11 @@ jobs:
 
       - name: "Build & test"
         run: |
-          cd d-two
+          cd ../d-two
           pwd
           echo "done!"
 
-      - name: "uses"
-        uses: "marvinpinto/action-automatic-releases@latest"
+      - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "latest"
